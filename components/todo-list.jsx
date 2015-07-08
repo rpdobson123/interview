@@ -18,10 +18,14 @@ const TodoList = React.createClass({
   },
   addEntry: function() {
     var state = this.state;
-    var newTask = {task: state.userInput, isAlive: true, index: state.items.length};
-    state.items.push(newTask);
-    state.userInput = '';
-    this.setState(state);
+    if(state.userInput.length > 0) {
+      var newTask = { task: state.userInput,
+                      isAlive: true,
+                      index: state.items.length };
+      state.items.push(newTask);
+      state.userInput = '';
+      this.setState(state);
+    }
 
   },
   render() {
