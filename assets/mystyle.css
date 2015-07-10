@@ -7,9 +7,15 @@
   min-height: 40px;
   border: 3px solid #000;
   border-radius: 30px; 
-	font-family: Lora;
+  font-family: Lora;
   font-size: 1.25em;
   vertical-align: center;
+}
+
+.save-container {
+  position:absolute;
+  left:256px;
+  top:64px;
 }
 
 .todo-text-input {
@@ -41,12 +47,8 @@
 	color: black;
 }
 .icon {
-  text-shadow:-2px -2px 0 #000,
-               2px -2px 0 #000,
-              -2px 2px 0 #000,
-               2px 2px 0 #000;
+  right: 16px;
 }
-
 .icon:hover {
   animation-name: growIcon;
   animation-duration: 0.5s;
@@ -54,17 +56,30 @@
   animation-direction: alternate;
 }
 
-.red-icon {
-  position: relative;
+.red {
+  position:relative;
+  text-shadow:-2px -2px 0 #000,
+               2px -2px 0 #000,
+              -2px 2px 0 #000,
+               2px 2px 0 #000;
   right: 8px;
   color: #F00;
 }
-.green-icon {
-  position: relative;
-  left: 18px;
+
+.green {
   color: #0F0;
 }
 
+.addEntry {
+  text-shadow:-2px -2px 0 #000,
+               2px -2px 0 #000,
+              -2px 2px 0 #000,
+               2px 2px 0 #000;
+}
+
+.blue {
+  color: #00F;
+}
 
 @keyframes growIcon {
   from {
