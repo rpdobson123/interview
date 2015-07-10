@@ -56,6 +56,10 @@
   animation-direction: alternate;
 }
 
+.todo-entry:only-child {
+  border-radius: 25px 25px 25px 25px;
+}
+
 .red {
   position:relative;
   text-shadow:-2px -2px 0 #000,
